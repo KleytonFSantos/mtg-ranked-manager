@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\MatchesResource\Pages;
-use App\Filament\Resources\MatchesResource\RelationManagers;
 use App\Models\Deck;
 use App\Models\Matches;
 use App\Models\Player;
@@ -12,8 +11,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class MatchesResource extends Resource
 {

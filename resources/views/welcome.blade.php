@@ -39,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="p-6 lg:w-[96rem] flex items-center justify-center align-middle rounded shadow-xl lg:px-8 lg:ml-20 mt-48">
+        <div class="p-6 lg:w-[96rem] flex items-center justify-center align-middle rounded shadow-xl lg:px-8 lg:ml-40 mt-48">
             <table class="w-full mt-4 text-left table-auto min-w-max sm:w-full md:w-full lg:w-full xl:w-full">
                 <thead>
                 <tr>

@@ -71,9 +71,9 @@
                         <td class="p-4 border-b border-blue-gray-50 md:p-2 lg:p-4 xl:p-4">
                             <div class="flex items-center gap-3">
                                 <div class="flex flex-col">
-                                    <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                                    <a href="{{ route('playerDecks', ['playerId' => $player->id]) }}" class="block font-sans text-sm antialiased font-normal leading-normal text-blue-500 hover:underline">
                                         {{ $player->name }}
-                                    </p>
+                                    </a>
                                 </div>
                             </div>
                         </td>

@@ -13,13 +13,13 @@
     <div class="h-screen w-full flex flex-col w-full h-full text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
         <div class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white rounded-none bg-clip-border">
             <div class=" flex items-center justify-between mb-8">
-                <div>
+                <div class="lg:ml-36">
                     <h5
                         class="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
                         Ranked Score
                     </h5>
                 </div>
-                <div class="flex gap-2 shrink-0 sm:flex-row">
+                <div class="flex gap-2 shrink-0 sm:flex-row lg:mr-36">
                     <button
                         class="select-none rounded-lg border border-gray-900 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                         type="button">

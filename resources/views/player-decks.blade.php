@@ -9,17 +9,17 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 </head>
-<body class="font-sans dark:text-white/50 sm:w-full sm:h-full w-max">
+<body class="font-sans dark:text-white/50 sm:w-full sm:h-full w-full">
 <div class="h-screen w-full flex flex-col w-full h-full text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
     <div class="mx-4 mt-4 overflow-hidden text-gray-700 bg-white rounded-none bg-clip-border">
-        <div class=" flex items-center justify-between mb-8">
-            <div>
+        <div class="flex items-center justify-between mb-8">
+            <div class="lg:ml-64">
                 <h5
                     class="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
                     Player Decks
                 </h5>
             </div>
-            <div class="flex gap-2 shrink-0 sm:flex-row">
+            <div class="flex gap-2 shrink-0 sm:flex-row lg:mr-80 md:mr-48">
                 <button
                     class="select-none rounded-lg border border-gray-900 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button">
@@ -39,8 +39,8 @@
             </div>
         </div>
     </div>
-    <div class="p-6 lg:w-[96rem] flex items-center justify-center align-middle rounded shadow-xl lg:px-8 lg:ml-20 mt-48">
-        <table class="w-full mt-4 text-left table-auto min-w-max sm:w-full md:w-full lg:w-full xl:w-full">
+    <div class="p-6  lg:w-[78rem] md:w-[48rem] flex items-center justify-center align-middle rounded shadow-xl lg:px-8 lg:ml-64 mt-48">
+        <table class="mt-4 text-left table-auto md:w-[48rem] lg:w-[78rem]">
             <thead>
             <tr>
                 <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50 md:p-2 lg:p-4 xl:p-4">
@@ -89,7 +89,7 @@
         </table>
     </div>
 
-    <a href="{{ route('scoreTable') }}" class="w-full mt-4 lg:ml-24 ml-4 text-left table-auto min-w-max sm:w-full md:w-full lg:w-full xl:w-full">
+    <a href="{{ route('scoreTable') }}" class="w-full mt-4 lg:ml-64 ml-4 text-left table-auto min-w-max sm:w-full md:w-full lg:w-full xl:w-full">
         Back
     </a>
 </div>

@@ -24,6 +24,9 @@ class DeckResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('liga_magic_link')
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\Select::make('ownerId')
                     ->label('Owner')
                     ->options(Player::all()->pluck('name','id')),
@@ -35,7 +38,8 @@ class DeckResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
+                    ->searchable()
+                    ->url(fn (Deck $model) => $model->liga_magic_link, true),
                 Tables\Columns\TextColumn::make('owner.name')
                     ->numeric()
                     ->sortable(),

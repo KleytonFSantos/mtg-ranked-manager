@@ -14,6 +14,7 @@ class Deck extends Model
 
     protected $fillable = [
         'name',
+        'liga_magic_link',
         'ownerId',
     ];
 

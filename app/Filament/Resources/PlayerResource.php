@@ -59,6 +59,7 @@ class PlayerResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
+            ->defaultSort('points', 'desc')
             ->filters([
                 //
             ])

@@ -44,13 +44,13 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->deck1->name }}
+                                    {{ $match['deck1']['name'] }}
                                 </p>
-                                @isset($match->deck1->card)
+                                @isset($match['deck1']['card'])
                                     <div
                                         class="absolute z-10 hidden p-2 bg-white border rounded-lg shadow-lg group-hover:block"
                                         style="top: -25px; transform: translateY(-100%);">
-                                        <img src="{{ $match->deck1->card->imageUrl }}" alt="Deck Image" class="w-48 h-auto rounded-md">
+                                        <img src="{{ $match['deck1']['card']->imageUrl  ?? $match['deck1']['card'] ?? $match['deck1']['card'] }}" alt="Deck Image" class="w-48 h-auto rounded-md">
                                     </div>
                                 @endisset
                             </div>
@@ -60,13 +60,13 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->deck2->name }}
+                                    {{ $match['deck2']['name'] }}
                                 </p>
-                             @isset($match->deck2->card)
+                             @isset($match['deck2']['card'])
                                     <div
                                         class="absolute z-10 hidden p-2 bg-white border rounded-lg shadow-lg group-hover:block"
                                         style="top: -25px; transform: translateY(-100%);">
-                                        <img src="{{ $match->deck2->card->imageUrl }}" alt="Deck Image" class="w-48 h-auto rounded-md">
+                                        <img src="{{ $match['deck2']['card']->imageUrl  ?? $match['deck2']['card'] }}" alt="Deck Image" class="w-48 h-auto rounded-md">
                                     </div>
                                 @endisset
                             </div>
@@ -76,13 +76,13 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->deck3->name }}
+                                    {{ $match['deck3']['name'] }}
                                 </p>
-                             @isset($match->deck3->card)
+                             @isset($match['deck3']['card'])
                                     <div
                                         class="absolute z-10 hidden p-2 bg-white border rounded-lg shadow-lg group-hover:block"
                                         style="top: -25px; transform: translateY(-100%);">
-                                        <img src="{{ $match->deck3->card->imageUrl }}" alt="Deck Image" class="w-48 h-auto rounded-md">
+                                        <img src="{{ $match['deck3']['card']->imageUrl  ?? $match['deck3']['card'] }}" alt="Deck Image" class="w-48 h-auto rounded-md">
                                     </div>
                                 @endisset
                             </div>
@@ -92,13 +92,13 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->deck4->name }}
+                                    {{ $match['deck4']['name'] }}
                                 </p>
-                             @isset($match->deck4->card)
+                             @isset($match['deck4']['card'])
                                     <div
                                         class="absolute z-10 hidden p-2 bg-white border rounded-lg shadow-lg group-hover:block"
                                         style="top: -25px; transform: translateY(-100%);">
-                                        <img src="{{ $match->deck4->card->imageUrl }}" alt="Deck Image" class="w-48 h-auto rounded-md">
+                                        <img src="{{ $match['deck4']['card']->imageUrl  ?? $match['deck4']['card'] }}" alt="Deck Image" class="w-48 h-auto rounded-md">
                                     </div>
                                 @endisset
                             </div>
@@ -108,7 +108,7 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->winner->name }}
+                                    {{ $match['winner']['name'] ?? $match['winner']}}
                                 </p>
                             </div>
                         </div>

@@ -16,6 +16,7 @@ services:
       - ./:/var/www
     networks:
       - app-network
+
   ###> doctrine/doctrine-bundle ###
   database:
     image: mysql:8.1
@@ -32,6 +33,7 @@ services:
     networks:
       - app-network
   ###< doctrine/doctrine-bundle ###
+
   nginx:
     image: nginx:1.25-alpine
     container_name: laravel-blog-nginx
@@ -44,10 +46,22 @@ services:
     networks:
       - app-network
 
+  ### Adicionando o serviço Redis ###
+  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
 networks:
   app-network:
     driver: bridge
+
 volumes:
   ###> doctrine/doctrine-bundle ###
   database_data:
     driver: local
+  ###< doctrine/doctrine-bundle ###

@@ -55,7 +55,7 @@
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
-                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck1->name }}
+                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck1?->name }}
                                 </a>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
-                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck2->name }}
+                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck2?->name }}
                                 </a>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
-                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck3->name }}
+                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck3?->name }}
                                 </a>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
-                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck4->name }}
+                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck4?->name }}
                                 </a>
                             </div>
                         </div>

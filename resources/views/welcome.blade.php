@@ -10,22 +10,27 @@
             <thead>
                 <tr>
                     <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50 md:p-2 lg:p-4 xl:p-4">
-                        <p class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                        <p class="block font-sans text-sm antialiased font-normal leading-none text-zinc-900 opacity-70">
+                            Rank
+                        </p>
+                    </th>
+                    <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50 md:p-2 lg:p-4 xl:p-4">
+                        <p class="block font-sans text-sm antialiased font-normal leading-none text-zinc-900 opacity-70">
                             Player
                         </p>
                     </th>
                     <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50 md:p-2 lg:p-4 xl:p-4">
-                        <p class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                        <p class="block font-sans text-sm antialiased font-normal leading-none text-zinc-900 opacity-70">
                             Wins
                         </p>
                     </th>
                     <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50 md:p-2 lg:p-4 xl:p-4">
-                        <p class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                        <p class="block font-sans text-sm antialiased font-normal leading-none text-zinc-900 opacity-70">
                             Losses
                         </p>
                     </th>
                     <th class="p-4 border-y border-blue-gray-100 bg-blue-gray-50/50 md:p-2 lg:p-4 xl:p-4">
-                        <p class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                        <p class="block font-sans text-sm antialiased font-normal leading-none text-zinc-900 opacity-70">
                             Points
                         </p>
                     </th>
@@ -34,6 +39,13 @@
             <tbody>
             @foreach($players as $player)
                 <tr>
+                    <td class="p-4 border-b border-blue-gray-50 md:p-2 lg:p-4 xl:p-4">
+                        <div class="flex items-center gap-3">
+                            <div class="flex flex-col">
+                                {{ $loop->iteration }}
+                            </div>
+                        </div>
+                    </td>
                     <td class="p-4 border-b border-blue-gray-50 md:p-2 lg:p-4 xl:p-4">
                         <div class="flex items-center gap-3">
                             <div class="flex flex-col">

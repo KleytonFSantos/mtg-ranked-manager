@@ -50,6 +50,7 @@
                                 >
                                     <span class="font-bold"> Escolhido:</span> {{ $match->deck1->name }}
                                 </a>
+                                @isset($match->bannedDeck1)
                                 <a
                                     href="{{ $match->bannedDeck1?->liga_magic_link }}"
                                     target="_blank"
@@ -57,6 +58,7 @@
                                 >
                                     <span class="font-bold">Banido:</span> {{ $match->bannedDeck1?->name }}
                                 </a>
+                                @endisset
                             </div>
                         </div>
                     </td>
@@ -70,6 +72,7 @@
                                 >
                                    <span class="font-bold"> Escolhido:</span> {{ $match->deck2->name }}
                                 </a>
+                                @isset($match->bannedDeck2)
                                 <a
                                     href="{{ $match->bannedDeck2?->liga_magic_link }}"
                                     target="_blank"
@@ -77,6 +80,7 @@
                                 >
                                     <span class="font-bold">Banido:</span> {{ $match->bannedDeck2?->name }}
                                 </a>
+                                @endisset
                             </div>
                         </div>
                     </td>
@@ -90,6 +94,7 @@
                                 >
                                     <span class="font-bold"> Escolhido:</span> {{ $match->deck3->name }}
                                 </a>
+                                @isset($match->bannedDeck3)
                                 <a
                                     href="{{ $match->bannedDeck3?->liga_magic_link }}"
                                     target="_blank"
@@ -97,6 +102,7 @@
                                 >
                                     <span class="font-bold">Banido:</span> {{ $match->bannedDeck3?->name }}
                                 </a>
+                                @endisset
                             </div>
                         </div>
                     </td>
@@ -110,6 +116,7 @@
                                 >
                                     <span class="font-bold"> Escolhido:</span> {{ $match->deck4->name }}
                                 </a>
+                                @isset($match->bannedDeck4)
                                 <a
                                     href="{{ $match->bannedDeck4?->liga_magic_link }}"
                                     target="_blank"
@@ -117,6 +124,7 @@
                                 >
                                     <span class="font-bold">Banido:</span> {{ $match->bannedDeck4?->name }}
                                 </a>
+                                @endisset
                             </div>
                         </div>
                     </td>

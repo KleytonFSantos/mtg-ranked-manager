@@ -41,7 +41,7 @@
                 <tr>
                     <td class="p-4 border-b border-blue-gray-50 md:p-2 lg:p-4 xl:p-4">
                         <div class="flex items-center gap-3">
-                            <div class="flex flex-col">
+                            <div class="flex flex-col text-gray-700 font-bold">
                                 {{ $loop->iteration }}
                             </div>
                         </div>

@@ -43,64 +43,80 @@
                     <td class="p-4 border-b border-blue-gray-50 md:p-2 lg:p-4 xl:p-4">
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
-                                <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->deck1->name }}
-                                </p>
-                                @isset($match->deck1->card)
-                                    <div
-                                        class="absolute z-10 hidden p-2 bg-white border rounded-lg shadow-lg group-hover:block"
-                                        style="top: -25px; transform: translateY(-100%);">
-                                        <img src="{{ $match->deck1->card->imageUrl }}" alt="Deck Image" class="w-48 h-auto rounded-md">
-                                    </div>
-                                @endisset
+                                <a
+                                    href="{{ $match->deck1->liga_magic_link }}"
+                                    target="_blank"
+                                    class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
+                                >
+                                    <span class="font-bold"> Escolhido:</span> {{ $match->deck1->name }}
+                                </a>
+                                <a
+                                    href="{{ $match->bannedDeck1->liga_magic_link }}"
+                                    target="_blank"
+                                    class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
+                                >
+                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck1->name }}
+                                </a>
                             </div>
                         </div>
                     </td>
                     <td class="p-4 border-b border-blue-gray-50 md:p-2 lg:p-4 xl:p-4">
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
-                                <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->deck2->name }}
-                                </p>
-                             @isset($match->deck2->card)
-                                    <div
-                                        class="absolute z-10 hidden p-2 bg-white border rounded-lg shadow-lg group-hover:block"
-                                        style="top: -25px; transform: translateY(-100%);">
-                                        <img src="{{ $match->deck2->card->imageUrl }}" alt="Deck Image" class="w-48 h-auto rounded-md">
-                                    </div>
-                                @endisset
+                                <a
+                                    href="{{ $match->deck2->liga_magic_link }}"
+                                    target="_blank"
+                                    class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
+                                >
+                                   <span class="font-bold"> Escolhido:</span> {{ $match->deck2->name }}
+                                </a>
+                                <a
+                                    href="{{ $match->bannedDeck2->liga_magic_link }}"
+                                    target="_blank"
+                                    class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
+                                >
+                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck2->name }}
+                                </a>
                             </div>
                         </div>
                     </td>
                     <td class="p-4 border-b border-blue-gray-50 md:p-2 lg:p-4 xl:p-4">
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
-                                <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->deck3->name }}
-                                </p>
-                             @isset($match->deck3->card)
-                                    <div
-                                        class="absolute z-10 hidden p-2 bg-white border rounded-lg shadow-lg group-hover:block"
-                                        style="top: -25px; transform: translateY(-100%);">
-                                        <img src="{{ $match->deck3->card->imageUrl }}" alt="Deck Image" class="w-48 h-auto rounded-md">
-                                    </div>
-                                @endisset
+                                <a
+                                    href="{{ $match->deck3->liga_magic_link }}"
+                                    target="_blank"
+                                    class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
+                                >
+                                    <span class="font-bold"> Escolhido:</span> {{ $match->deck3->name }}
+                                </a>
+                                <a
+                                    href="{{ $match->bannedDeck3->liga_magic_link }}"
+                                    target="_blank"
+                                    class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
+                                >
+                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck3->name }}
+                                </a>
                             </div>
                         </div>
                     </td>
                     <td class="p-4 border-b border-blue-gray-50 md:p-2 lg:p-4 xl:p-4">
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
-                                <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer">
-                                    {{ $match->deck4->name }}
-                                </p>
-                             @isset($match->deck4->card)
-                                    <div
-                                        class="absolute z-10 hidden p-2 bg-white border rounded-lg shadow-lg group-hover:block"
-                                        style="top: -25px; transform: translateY(-100%);">
-                                        <img src="{{ $match->deck4->card->imageUrl }}" alt="Deck Image" class="w-48 h-auto rounded-md">
-                                    </div>
-                                @endisset
+                                <a
+                                    href="{{ $match->deck4->liga_magic_link }}"
+                                    target="_blank"
+                                    class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
+                                >
+                                    <span class="font-bold"> Escolhido:</span> {{ $match->deck4->name }}
+                                </a>
+                                <a
+                                    href="{{ $match->bannedDeck4->liga_magic_link }}"
+                                    target="_blank"
+                                    class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
+                                >
+                                    <span class="font-bold">Banido:</span> {{ $match->bannedDeck4->name }}
+                                </a>
                             </div>
                         </div>
                     </td>

@@ -17,6 +17,10 @@ class Matches extends Model
         'deck2Id',
         'deck3Id',
         'deck4Id',
+        'banned_deck1Id',
+        'banned_deck2Id',
+        'banned_deck3Id',
+        'banned_deck4Id',
         'winnerId',
     ];
 
@@ -38,6 +42,26 @@ class Matches extends Model
     public function deck4(): BelongsTo
     {
         return $this->belongsTo(Deck::class, 'deck4Id');
+    }
+
+    public function bannedDeck1(): BelongsTo
+    {
+        return $this->belongsTo(Deck::class, 'banned_deck1Id');
+    }
+
+    public function bannedDeck2(): BelongsTo
+    {
+        return $this->belongsTo(Deck::class, 'banned_deck2Id');
+    }
+
+    public function bannedDeck3(): BelongsTo
+    {
+        return $this->belongsTo(Deck::class, 'banned_deck3Id');
+    }
+
+    public function bannedDeck4(): BelongsTo
+    {
+        return $this->belongsTo(Deck::class, 'banned_deck4Id');
     }
 
     public function winner(): BelongsTo

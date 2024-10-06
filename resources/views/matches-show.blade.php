@@ -44,14 +44,14 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <a
-                                    href="{{ $match->deck1->liga_magic_link }}"
+                                    href="{{ $match->deck1?->liga_magic_link }}"
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
                                     <span class="font-bold"> Escolhido:</span> {{ $match->deck1->name }}
                                 </a>
                                 <a
-                                    href="{{ $match->bannedDeck1->liga_magic_link }}"
+                                    href="{{ $match->bannedDeck1?->liga_magic_link }}"
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
@@ -64,14 +64,14 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <a
-                                    href="{{ $match->deck2->liga_magic_link }}"
+                                    href="{{ $match->deck2?->liga_magic_link }}"
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
                                    <span class="font-bold"> Escolhido:</span> {{ $match->deck2->name }}
                                 </a>
                                 <a
-                                    href="{{ $match->bannedDeck2->liga_magic_link }}"
+                                    href="{{ $match->bannedDeck2?->liga_magic_link }}"
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
@@ -84,14 +84,14 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <a
-                                    href="{{ $match->deck3->liga_magic_link }}"
+                                    href="{{ $match->deck3??->liga_magic_link }}"
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
                                     <span class="font-bold"> Escolhido:</span> {{ $match->deck3->name }}
                                 </a>
                                 <a
-                                    href="{{ $match->bannedDeck3->liga_magic_link }}"
+                                    href="{{ $match->bannedDeck3?->liga_magic_link }}"
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
@@ -104,14 +104,14 @@
                         <div class="relative flex items-center gap-3 group">
                             <div class="flex flex-col">
                                 <a
-                                    href="{{ $match->deck4->liga_magic_link }}"
+                                    href="{{ $match->deck4?->liga_magic_link }}"
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >
                                     <span class="font-bold"> Escolhido:</span> {{ $match->deck4->name }}
                                 </a>
                                 <a
-                                    href="{{ $match->bannedDeck4->liga_magic_link }}"
+                                    href="{{ $match->bannedDeck4?->liga_magic_link }}"
                                     target="_blank"
                                     class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900 hover:text-blue-500 cursor-pointer"
                                 >

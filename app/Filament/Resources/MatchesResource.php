@@ -22,6 +22,18 @@ class MatchesResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\Select::make('banned_deck1Id')
+                    ->label('Primeiro Deck Banido')
+                    ->options(Deck::all()->pluck('name','id')),
+                Forms\Components\Select::make('banned_deck2Id')
+                    ->label('Segundo Deck Banido')
+                    ->options(Deck::all()->pluck('name','id')),
+                Forms\Components\Select::make('banned_deck3Id')
+                    ->label('Terceiro Deck Banido')
+                    ->options(Deck::all()->pluck('name','id')),
+                Forms\Components\Select::make('banned_deck4Id')
+                    ->label('Quarto Deck Banido')
+                    ->options(Deck::all()->pluck('name','id')),
                 Forms\Components\Select::make('deck1Id')
                     ->label('Primeiro Deck')
                     ->options(Deck::all()->pluck('name','id')),

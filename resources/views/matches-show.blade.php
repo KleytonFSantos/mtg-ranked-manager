@@ -5,7 +5,7 @@
 </head>
 <body class="font-sans dark:text-white/50 sm:w-full sm:h-full w-full">
 @include('layouts.header-layout', ['title' => 'Matches'])
-<div class="h-screen w-full flex flex-col w-full h-full text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
+<div class="h-screen w-full flex flex-col w-full h-full text-gray-700 bg-white rounded-xl bg-clip-border">
     <div class="p-6 lg:w-[78rem] md:w-[48rem] flex items-center justify-center align-middle rounded shadow-xl lg:px-8 lg:ml-64 mt-48">
         <div class="overflow-x-auto">
             <table class="mt-4 text-left table-auto md:w-[48rem] lg:w-[78rem] min-w-full">
